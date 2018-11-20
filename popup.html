@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Group Story</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+	<div class="index">
+		<p class="error"></p>
+		<p>Group Story</p>
+		<div class="readeMe">
+			<input type="submit" class="login_button" value="Login">
+			<input type="submit" class="signup_button" value="Signup">
+
+			<!-- signup form -->
+			<div class="signup_form" style="display: none;">
+				<input type="text" class="name" placeholder="Enter Name">
+				<input type="text" class="signup_email" placeholder="Enter Email">
+				<input type="password" class="signup_password" placeholder="Enter password">
+				<input type="submit" class="signup" value="Signup">
+				<p class="message"></p>
+			</div>
+
+			<!-- login form -->
+			<div class="login_form" style="display: none;">
+				<input type="text" class="login_email" placeholder="Enter Email">
+				<input type="password" class="login_password" placeholder="Enter password">
+				<input type="submit" class="login" value="login">
+			</div>
+
+			<!-- login with fb -->
+			<input type="submit" class="login_with_fb" value="Login with facebook">
+
+			<!-- Reade me -->
+			<p>Reade Me</p>
+			<ul>
+				<li>Login with facebook and invite your friends.</li>
+				<li>Add your first story line or add your line in other story, you have charactor limit 200.</li>
+				<li>After 24 hour story will post on you facebook wall.</li>
+			</ul>
+		</div>
+	</div>
+	<!-- text box and story -->
+	<div class="content" style="display: none;">
+		<p class="user_name"></p>
+		<p class="error"></p>
+		<input type="hidden" class="user_id">
+		<a href="#" class="logout">Logout</a>
+		<p>Group Story</p>
+		<div class="header">
+			<div class="stories">
+			</div>
+			<input type="hidden" class="add_story">
+			<!-- <span class="close">X</span> -->
+			<div class="display_box"></div>
+		</div>
+		<div class="input_fields">
+			<textarea cols="20" rows="5" class="input_box" maxlength="200"></textarea>
+			<input type="submit" value="Submit" class="send_story">
+		</div>
+	</div>
+	<!-- <div class="footer">52PP</div> -->
+</body>
+</html>

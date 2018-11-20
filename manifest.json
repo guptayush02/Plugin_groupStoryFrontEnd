@@ -1,0 +1,18 @@
+{
+	"manifest_version" : 2,
+	"name" : "Group Story",
+	"version" : "1.0",
+	"description" : "This is a simpel group story extenction",
+	"icons" : {
+		
+	},
+	"browser_action" : {
+		
+		"default_popup" : "popup.html"
+	},
+
+	"permissions" : [
+		"storage",
+		"http://localhost:8080/"
+	]
+}
